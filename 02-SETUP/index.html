@@ -8,14 +8,18 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      .container {
-        /* CÁCH VIẾT GỘP GIỮA direction + wrap */
+      /* justify-content: alignment along main axis */
+      /* flex-start (default) | flex-end | center | space-between | space-around | space-evenly*/
 
-        /* flex-flow: <direction-value> <wrap-value> */
-        
+      .container {
         display: flex;
-        flex-flow: row wrap;
-        /* flex-flow: row-reverse wrap; */
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-between; /* đầu và cuối sẽ sát vách và các k/c bên trong sẽ đều nhau */
+        justify-content: space-around; /*  khoảng cách 2 đầu bằng 50% các khoảng bên trong */
+        justify-content: space-evenly; /*  tất cả các k/c đều bằng nhau hết */
       }
     </style>
   </head>
@@ -28,10 +32,12 @@
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
       <div class="box box-5">5</div>
-      <div class="box box-m">M</div>
-      <div class="box box-m">M</div>
-      <div class="box box-m">M</div>
-      <div class="box box-m">M</div>
+      <div class="box box-4">6</div>
+      <div class="box box-5">7</div>
+      <div class="box box-4">8</div>
+      <div class="box box-5">9</div>
+      <div class="box box-4">10</div>
+      <div class="box box-5">11</div>
     </div>
   </body>
 </html>
