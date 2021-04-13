@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <style>
       .container {
-        /* ITEM TỰ RỚT XUỐNG DÒNG KHI CHIỀU DÀI KHÔNG ĐỦ */
+        /* CÁCH VIẾT GỘP GIỮA direction + wrap */
 
-        /* flex-wrap */
-        /* nowrap (default) | wrap | column */
+        /* flex-flow: <direction-value> <wrap-value> */
+        
         display: flex;
-        flex-wrap: nowrap;
-        flex-wrap: wrap;
-        flex-wrap: wrap-reverse;
+        flex-flow: row wrap;
+        /* flex-flow: row-reverse wrap; */
       }
     </style>
   </head>
