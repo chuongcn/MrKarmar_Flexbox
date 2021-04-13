@@ -7,9 +7,22 @@
     <title>Flexbox - Karmar2021</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container{
+            /* flex-direction */
+            /* row (default) | row-reverse | column */
+            display: flex;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+        }
+    </style>
 </head>
 <body>
+    <!-- Parent: flex container -->
     <div class="container">
+        <!-- Child: flex items -->
         <div class="box box-1">1</div>
         <div class="box box-2">2</div>
         <div class="box box-3">3</div>
