@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox - Karmar2021</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <style>
-        .container{
-            /* flex-direction */
-            /* row (default) | row-reverse | column */
-            display: flex;
-            flex-direction: row;
-            flex-direction: row-reverse;
-            flex-direction: column;
-            flex-direction: column-reverse;
-        }
+      .container {
+        /* ITEM TỰ RỚT XUỐNG DÒNG KHI CHIỀU DÀI KHÔNG ĐỦ */
+
+        /* flex-wrap */
+        /* nowrap (default) | wrap | column */
+        display: flex;
+        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Parent: flex container -->
     <div class="container">
-        <!-- Child: flex items -->
-        <div class="box box-1">1</div>
-        <div class="box box-2">2</div>
-        <div class="box box-3">3</div>
-        <div class="box box-4">4</div>
-        <div class="box box-5">5</div>
+      <!-- Child: flex items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box box-m">M</div>
+      <div class="box box-m">M</div>
+      <div class="box box-m">M</div>
+      <div class="box box-m">M</div>
     </div>
-</body>
+  </body>
 </html>
