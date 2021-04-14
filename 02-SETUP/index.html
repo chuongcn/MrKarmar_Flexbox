@@ -8,19 +8,27 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      /* justify-content: alignment along main axis */
-      /* flex-start (default) | flex-end | center | space-between | space-around | space-evenly*/
+      /* align-items: alignment along CROSS AXIS */
+      /* stretch (default) | flex-start | flex-end | center | baseline */
 
       .container {
+        height: 400px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        justify-content: flex-end;
-        justify-content: center;
-        justify-content: space-between; /* đầu và cuối sẽ sát vách và các k/c bên trong sẽ đều nhau */
-        justify-content: space-around; /*  khoảng cách 2 đầu bằng 50% các khoảng bên trong */
-        justify-content: space-evenly; /*  tất cả các k/c đều bằng nhau hết */
+        /* align-items: stretch; */
+        /* align-items: flex-start;  */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        align-items: baseline; /* CANH THEO CÁI CHÂN CỦA TEXT */
       }
+      .box-4{
+          font-size: 70px;
+      }
+
+      .box-5{
+          font-size: 100px;
+      }
+
     </style>
   </head>
   <body>
@@ -36,8 +44,6 @@
       <div class="box box-5">7</div>
       <div class="box box-4">8</div>
       <div class="box box-5">9</div>
-      <div class="box box-4">10</div>
-      <div class="box box-5">11</div>
     </div>
   </body>
 </html>
