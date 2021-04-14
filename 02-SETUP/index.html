@@ -8,27 +8,32 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      /* align-items: alignment along CROSS AXIS */
-      /* stretch (default) | flex-start | flex-end | center | baseline */
+      /* align-content */
+      /* flex-start | flex-end | space-between | space-around |
+        space-evenly | center
+       */
 
       .container {
         height: 400px;
         display: flex;
         flex-wrap: wrap;
-        /* align-items: stretch; */
-        /* align-items: flex-start;  */
-        /* align-items: flex-end; */
-        /* align-items: center; */
-        align-items: baseline; /* CANH THEO CÁI CHÂN CỦA TEXT */
+
+        /* align-items: flex-start; */
+        align-content: flex-start;
+        align-content: flex-end;
+        align-content: center;
+        align-content: space-between;
+        align-content: space-around;
+        align-content: space-evenly;
+
       }
-      .box-4{
+      /* .box-4{
           font-size: 70px;
       }
 
       .box-5{
           font-size: 100px;
-      }
-
+      } */
     </style>
   </head>
   <body>
