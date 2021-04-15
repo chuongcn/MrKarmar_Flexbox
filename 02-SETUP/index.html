@@ -9,44 +9,30 @@
     <link rel="stylesheet" href="css/style.css" />
     <style>
       /* Flex Items Properties */
-      /* Flex-shrink: default value = 1 */
+
+      /* flex: flex-grow flex-shrink flex-basis */
+      /* flex: 0 1 auto */
 
 
       .container {
         display: flex;
         max-width: 800px;
       }
-      .box{
-        box-sizing: border-box;
-        flex-basis: 300px;
-      }
-      .box-1{
-        flex-shrink: 1;
-      }
-      .box-2{
-        flex-shrink: 4;
-      }
 
-      /*
-          box1: 300
-          box2: 300
-          total basis: 600
-          container: 550
-          space remaining: 50
-          box1 final: 290
-          box2 final: 260 
-       */
+      .box{
+        flex: 4;
+      }
      
-    
+
     </style>
   </head>
   <body>
     <div class="container">
       <div class="box box-1">1</div>
       <div class="box box-2">2</div>
-      <!-- <div class="box box-3">abc</div>
+      <div class="box box-3">3</div>
       <div class="box box-4">4</div>
-      <div class="box box-5">5</div> -->
+      <div class="box box-5">5</div>
     </div>
   </body>
 </html>
