@@ -10,19 +10,22 @@
     <style>
       /* Flex Items Properties */
 
-      /* flex: flex-grow flex-shrink flex-basis */
-      /* flex: 0 1 auto */
-
-
+      /* align-self: auto | flex-start | flex-end| center | baseline | stretch */
+      
       .container {
         display: flex;
-        max-width: 800px;
+        height: 400px;
+        align-items: flex-start;
       }
 
-      .box{
-        flex: 4;
+      .box-1{
+        align-self: center;
       }
-     
+
+      .box-4{
+        align-self: flex-end;
+      }
+
 
     </style>
   </head>
